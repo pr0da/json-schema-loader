@@ -1,0 +1,28 @@
+{
+  "name": "@pr0da/json-schema-loader",
+  "version": "0.1.0",
+  "description": "json-schema loader for webpack",
+  "main": "./lib/jsonSchemaLoader.js",
+  "dependencies": {
+    "loader-utils": "^0.2.13"
+  },
+  "devDependencies": {
+    "webpack": "^1.12.14"
+  },
+  "scripts": {
+    "test": "webpack test/test.js dist/bundle.js"
+  },
+  "repository": {
+    "url": "git+https://github.com/pr0da/json-schema-loader.git",
+    "type": "git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pr0da/json-schema-loader/issues"
+  },
+  "homepage": "https://github.com/pr0da/json-schema-loader#readme",
+  "directories": {
+    "test": "test"
+  },
+  "author": "pr0da"
+}

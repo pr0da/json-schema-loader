@@ -1,0 +1,1 @@
+var dummySchema = require('../lib/jsonSchemaLoader.js?prefix=http://some.site.somewhere/entry-schema#!./root.json');
