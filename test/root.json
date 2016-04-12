@@ -9,12 +9,12 @@
     "properties": {
         "storage": {
             "type": "object",
-            "oneOf": [
+            "allOf": [
                 {
-                    "$ref": "http://some.site.somewhere/entry-schema#/definitions/diskDevice"
+                    "$ref": "./definitions/diskDevice.json"
                 },
                 {
-                    "$ref": "http://some.site.somewhere/entry-schema#/definitions/nfs"
+                    "$ref": "./definitions/nfs.json"
                 }
             ]
         }

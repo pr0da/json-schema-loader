@@ -4,7 +4,9 @@
   "description": "json-schema loader for webpack",
   "main": "./lib/jsonSchemaLoader.js",
   "dependencies": {
-    "loader-utils": "^0.2.13"
+    "json-refs": "^2.1.5",
+    "loader-utils": "^0.2.13",
+    "lodash": "^4.10.0"
   },
   "devDependencies": {
     "webpack": "^1.12.14"
