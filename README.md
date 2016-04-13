@@ -6,7 +6,7 @@
 
 ## Description
 
-Enchanced json loader for webpack, which handles json schema references (`$ref`). The loader uses [json-refs](https://github.com/whitlockjc/json-refs) to resolve references.
+Enchanced json loader for webpack, which handles json schema references (`$ref`). The loader uses [json-schema-ref-parser](https://github.com/BigstickCarpet/json-schema-ref-parser) to resolve references.
 
 Additionally the loader can merger subschemas given by `allOf`.
 

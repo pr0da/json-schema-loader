@@ -10,18 +10,7 @@
             "pattern": "^(/[^/]+)+$"
         },
         "server": {
-            "type": "string",
-            "oneOf": [
-                {
-                    "format": "host-name"
-                },
-                {
-                    "format": "ipv4"
-                },
-                {
-                    "format": "ipv6"
-                }
-            ]
+            "$ref": "./server.json"
         }
     },
     "required": [

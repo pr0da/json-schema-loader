@@ -4,15 +4,16 @@
   "description": "json-schema loader for webpack",
   "main": "./lib/jsonSchemaLoader.js",
   "dependencies": {
-    "json-refs": "^2.1.5",
     "loader-utils": "^0.2.13",
-    "lodash": "^4.10.0"
+    "lodash": "^4.10.0",
+    "json-schema-ref-parser": "^3.0.2"
   },
   "devDependencies": {
+    "tape": "^4.5.1",
     "webpack": "^1.12.14"
   },
   "scripts": {
-    "test": "webpack test/test.js dist/bundle.js"
+    "test": "tape test/test.js"
   },
   "repository": {
     "url": "git+https://github.com/pr0da/json-schema-loader.git",

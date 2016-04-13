@@ -1,0 +1,1 @@
+module.exports = require('../lib/jsonSchemaLoader.js?mergeAllOf=true!./schemas/root-external.json');

@@ -1,0 +1,1 @@
+module.exports = require('../lib/jsonSchemaLoader.js!./schemas/root-internal.json');
