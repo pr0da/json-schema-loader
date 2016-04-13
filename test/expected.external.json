@@ -1,49 +1,51 @@
 {
-		"id": "http://some.site.somewhere/entry-schema#",
-		"$schema": "http://json-schema.org/draft-04/schema#",
-		"description": "schema for an fstab entry",
-		"type": "object",
-		"required": [
-			"storage"
-		],
-		"properties": {
-			"storage": {
-				"properties": {
-					"type": {
-						"enum": [
-							"nfs"
-						]
-					},
-					"device": {
-						"type": "string",
-						"pattern": "^/dev/[^/]+(/[^/]+)*$"
-					},
-					"remotePath": {
-						"type": "string",
-						"pattern": "^(/[^/]+)+$"
-					},
-					"server": {
-						"type": "string",
-						"oneOf": [
-							{
-								"format": "host-name"
-							},
-							{
-								"format": "ipv4"
-							},
-							{
-								"format": "ipv6"
-							}
-						]
-					}
-				},
-				"required": [
-					"type",
-					"server",
-					"remotePath"
-				],
-				"additionalProperties": false,
-				"type": "object"
-			}
-		}
-	}
+    "id": "http://some.site.somewhere/entry-schema#",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "schema for an fstab entry",
+    "type": "object",
+    "required": [
+        "storage"
+    ],
+    "properties": {
+        "storage": {
+            "properties": {
+                "type": {
+                    "enum": [
+                        "disk",
+                        "nfs"
+                    ]
+                },
+                "device": {
+                    "type": "string",
+                    "pattern": "^/dev/[^/]+(/[^/]+)*$"
+                },
+                "remotePath": {
+                    "type": "string",
+                    "pattern": "^(/[^/]+)+$"
+                },
+                "server": {
+                    "type": "string",
+                    "oneOf": [
+                        {
+                            "format": "host-name"
+                        },
+                        {
+                            "format": "ipv4"
+                        },
+                        {
+                            "format": "ipv6"
+                        }
+                    ]
+                }
+            },
+            "required": [
+                "type",
+                "device",
+                "server",
+                "remotePath"
+            ],
+            "additionalProperties": false,
+            "type": "object"
+        }
+    }
+}
